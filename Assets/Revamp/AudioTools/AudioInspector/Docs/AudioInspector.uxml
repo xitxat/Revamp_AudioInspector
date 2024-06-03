@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Revamp/AudioTools/AudioInspector/Docs/AudioInspector.uss?fileID=7433441132597879392&amp;guid=0b4518159abaacf49883d325e4242602&amp;type=3#AudioInspector" />
+    <ui:VisualElement name="base" class="border-root" style="flex-grow: 1;">
+        <ui:VisualElement name="search" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
