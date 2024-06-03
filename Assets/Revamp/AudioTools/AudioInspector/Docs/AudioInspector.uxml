@@ -1,6 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
     <Style src="project://database/Assets/Revamp/AudioTools/AudioInspector/Docs/AudioInspector.uss?fileID=7433441132597879392&amp;guid=0b4518159abaacf49883d325e4242602&amp;type=3#AudioInspector" />
     <ui:VisualElement name="base" class="border-root" style="flex-grow: 1;">
-        <ui:VisualElement name="search" style="flex-grow: 1;" />
+        <ui:VisualElement name="search" style="flex-grow: 1;">
+            <ui:Label text="Label" name="TITLE" class="font-title">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(603171696640)" />
+                </Bindings>
+            </ui:Label>
+            <ui:Label text="Label" class="font-title" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
