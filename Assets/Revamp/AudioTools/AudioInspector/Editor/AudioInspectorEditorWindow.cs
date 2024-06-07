@@ -26,7 +26,6 @@ namespace Revamp.AudioTools.AudioInspector
         private bool isOGG = false;
         private bool isWAV = false;
 
-        private bool hasSampleRate = false;
         
         [MenuItem("Tools/Revamp/Audio Inspector")]
         public static void ShowWindow()
@@ -49,14 +48,7 @@ namespace Revamp.AudioTools.AudioInspector
 
 private void SetupButtonsAndEvents()
         {
-            // Bind the UI elements
-            var searchFilterField = rootVisualElement.Q<TextField>("SEARCH_FILTER");
-            searchFilterField.value = searchFilter;
-            searchFilterField.RegisterValueChangedCallback(evt =>
-            {
-                searchFilter = evt.newValue;
-                SearchAudioClips(searchFilter);
-            });
+
 
             // Setup Toggle Event Handlers
             SetupToggle("FORCED_TO_MONO", value => isForcedToMono = value);
