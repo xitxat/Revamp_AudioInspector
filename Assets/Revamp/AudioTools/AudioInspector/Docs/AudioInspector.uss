@@ -25,3 +25,9 @@
     font-size: 13px;
     color: rgb(255, 160, 0);
 }
+
+.tog {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    align-self: flex-start;
+}

@@ -1,13 +1,53 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
     <Style src="project://database/Assets/Revamp/AudioTools/AudioInspector/Docs/AudioInspector.uss?fileID=7433441132597879392&amp;guid=0b4518159abaacf49883d325e4242602&amp;type=3#AudioInspector" />
     <ui:VisualElement name="base" class="border-root" style="flex-grow: 1;">
-        <ui:VisualElement name="search" style="flex-grow: 1;">
+        <ui:VisualElement name="search" style="flex-grow: 1; flex-direction: column; align-items: stretch;">
             <ui:Label text="Label" name="TITLE" class="font-title">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(603171696640)" />
                 </Bindings>
             </ui:Label>
-            <ui:Label text="Label" class="font-title" />
+            <ui:TextField label="Text Field" placeholder-text="t:AudioClip" name="SEARCH_FILTER">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(304245762273280)" />
+                </Bindings>
+            </ui:TextField>
+            <ui:Toggle label="Toggle" name="FORCED_TO_MONO">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(313917139431424)" />
+                </Bindings>
+            </ui:Toggle>
+            <ui:Toggle label="Toggle" name="LOADED_IN_BACKGROUND" style="align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start; flex-direction: row; overflow: hidden; flex-wrap: nowrap; flex-shrink: 0; flex-grow: 0;">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(314426395045888)" />
+                </Bindings>
+            </ui:Toggle>
+            <ui:Toggle label="Toggle" name="AMBISONIC">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(315123106689024)" />
+                </Bindings>
+            </ui:Toggle>
         </ui:VisualElement>
+        <ui:VisualElement name="compression" style="flex-grow: 1;">
+            <ui:Label text="Label" name="COMPRESSION_FORMAT">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(318813406343168)" />
+                </Bindings>
+            </ui:Label>
+            <ui:Toggle label="ADPCM" name="adpcm" />
+            <ui:Toggle label="PCM" name="pcm" />
+            <ui:Toggle label="Vorbis" name="vorbis" />
+        </ui:VisualElement>
+        <ui:VisualElement name="formats" style="flex-grow: 1;">
+            <ui:Label text="Label" name="AUDIO_FORMATS">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(319685578305536)" />
+                </Bindings>
+            </ui:Label>
+            <ui:Toggle label=".mp3" name="mp3" />
+            <ui:Toggle label=".ogg" name="ogg" />
+            <ui:Toggle label=".wav" name="wav" />
+        </ui:VisualElement>
+        <ui:ScrollView name="results" />
     </ui:VisualElement>
 </ui:UXML>
