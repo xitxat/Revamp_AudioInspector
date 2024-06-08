@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 6e58091cb514fbd48a5f4ba834b144ec, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 313917139431424
+    m_Localized: "Forc\xE9 en Mono"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315123106689024
+    m_Localized: Ambisonique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 314426395045888
+    m_Localized: "Charg\xE9 en arri\xE8re-plan"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304245762273280
+    m_Localized: Filtre de recherche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 603171696640
+    m_Localized: Rechercher des actifs AudioClip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 318813406343168
+    m_Localized: Format de compression
+    m_Metadata:
+      m_Items: []
+  - m_Id: 319685578305536
+    m_Localized: Formats audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321114070167552
+    m_Localized: "Taux d'\xE9chantillonnage"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321387534594048
+    m_Localized: Taux existants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321745937870848
+    m_Localized: "Aucun AudioClips trouv\xE9 pour la s\xE9lection actuelle."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

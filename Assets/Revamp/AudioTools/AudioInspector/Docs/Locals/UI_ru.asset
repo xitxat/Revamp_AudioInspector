@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_ru
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ru
+  m_SharedData: {fileID: 11400000, guid: 6e58091cb514fbd48a5f4ba834b144ec, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 313917139431424
+    m_Localized: "\u041F\u0440\u0438\u043D\u0443\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+      \u043C\u043E\u043D\u043E"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315123106689024
+    m_Localized: "\u0410\u043C\u0431\u0438\u0441\u043E\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 314426395045888
+    m_Localized: "\u0417\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043E \u0432 \u0444\u043E\u043D\u043E\u0432\u043E\u043C
+      \u0440\u0435\u0436\u0438\u043C\u0435"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304245762273280
+    m_Localized: "\u0424\u0438\u043B\u044C\u0442\u0440 \u043F\u043E\u0438\u0441\u043A\u0430"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 603171696640
+    m_Localized: "\u0418\u0441\u043A\u0430\u0442\u044C \u0440\u0435\u0441\u0443\u0440\u0441\u044B
+      AudioClip"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 318813406343168
+    m_Localized: "\u0424\u043E\u0440\u043C\u0430\u0442 \u0441\u0436\u0430\u0442\u0438\u044F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 319685578305536
+    m_Localized: "\u0410\u0443\u0434\u0438\u043E \u0444\u043E\u0440\u043C\u0430\u0442\u044B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321114070167552
+    m_Localized: "\u0427\u0430\u0441\u0442\u043E\u0442\u044B \u0434\u0438\u0441\u043A\u0440\u0435\u0442\u0438\u0437\u0430\u0446\u0438\u0438"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321387534594048
+    m_Localized: "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0435
+      \u0441\u0442\u0430\u0432\u043A\u0438"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321745937870848
+    m_Localized: "\u0410\u0443\u0434\u0438\u043E\u043A\u043B\u0438\u043F\u044B \u0434\u043B\u044F
+      \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E \u0432\u044B\u0431\u043E\u0440\u0430
+      \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u044B."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

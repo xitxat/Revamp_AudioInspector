@@ -1,0 +1,11 @@
+Key,Id,Catalan(ca),Chinese (Simplified)(zh-Hans),English(en),French(fr),German(de),Japanese(ja),Korean(ko),Russian(ru),Spanish(es)
+"FORCED_TO_MONO",313917139431424,"Forçat a Mono","强制单声道","Forced to Mono","Forcé en Mono","Auf Mono gezwungen","強制モノラル","모노로 강제","Принудительный моно","Forzado a Mono"
+"AMBISONIC",315123106689024,"Ambisònic","环绕声","Ambisonic","Ambisonique","Ambisonisch","アンビソニック","앰비소닉","Амбисонический","Ambisónico"
+"LOADED_IN_BACKGROUND",314426395045888,"Carregat en segon pla","后台加载","Loaded in Background","Chargé en arrière-plan","Im Hintergrund geladen","バックグラウンドでロード","백그라운드에서 로드","Загружено в фоновом режиме","Cargado en segundo plano"
+"SEARCH_FILTER",304245762273280,"Filtre de Cerca","搜索过滤器","Search Filter","Filtre de recherche","Suchfilter","検索フィルター","검색 필터","Фильтр поиска","Filtro de Búsqueda"
+"TITLE",603171696640,"Cerca actius d'AudioClip","搜索音频剪辑资源","Search AudioClip Assets","Rechercher des actifs AudioClip","AudioClip-Assets suchen","オーディオクリップアセットを検索","오디오 클립 자산 검색","Искать ресурсы AudioClip","Buscar recursos de AudioClip"
+"COMPRESSION_FORMAT",318813406343168,"Format de Compressió","压缩格式","Compression Format","Format de compression","Kompressionsformat","圧縮形式","압축 형식","Формат сжатия","Formato de Compresión"
+"AUDIO_FORMATS",319685578305536,"Formats d'Àudio","音频格式","Audio Formats","Formats audio","Audioformate","オーディオフォーマット","오디오 형식","Аудио форматы","Formatos de Audio"
+"SAMPLE_RATES",321114070167552,"Taxes de Mostreig","采样率","Sample Rates","Taux d'échantillonnage","Abtastraten","サンプリングレート","샘플링 속도","Частоты дискретизации","Tasas de Muestreo"
+"EXISTING_RATES",321387534594048,"Taxes Existents","现有率","Existing Rates","Taux existants","Vorhandene Raten","既存のレート","기존 속도","Существующие ставки","Tasas Existentes"
+"NO_CLIPS",321745937870848,"No s'han trobat AudioClips per a la selecció actual.","未找到当前选择的音频剪辑","No AudioClips found for current selection.","Aucun AudioClips trouvé pour la sélection actuelle.","Keine AudioClips für die aktuelle Auswahl gefunden.","現在の選択に一致するオーディオクリップは見つかりませんでした","현재 선택에 대한 오디오 클립을 찾을 수 없습니다","Аудиоклипы для текущего выбора не найдены.","No se han encontrado AudioClips para la selección actual"
