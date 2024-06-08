@@ -1,0 +1,11 @@
+Key,Id,Catalan(ca),English(en),Spanish(es)
+"FORCED_TO_MONO",313917139431424,"Forçat a Mono","Forced to Mono","Forzado a Mono"
+"AMBISONIC",315123106689024,"Ambisònic","Ambisonic","Ambisónico"
+"LOADED_IN_BACKGROUND",314426395045888,"Carregat en segon pla","Loaded in Background","Cargado en segundo plano"
+"SEARCH_FILTER",304245762273280,"Filtre de Cerca","Search Filter","Filtro de Búsqueda"
+"TITLE",603171696640,"Cerca actius d'AudioClip","Search AudioClip Assets","Buscar recursos de AudioClip"
+"COMPRESSION_FORMAT",318813406343168,"Format de Compressió","Compression Format","Formato de Compresión"
+"AUDIO_FORMATS",319685578305536,"Formats d'Àudio","Audio Formats","Formatos de Audio"
+"SAMPLE_RATES",321114070167552,"Taxes de Mostreig","Sample Rates","Tasas de Muestreo"
+"EXISTING_RATES",321387534594048,"Taxes Existents","Existing Rates","Tasas Existentes"
+"NO_CLIPS",321745937870848,"No s'han trobat AudioClips per a la selecció actual.","No AudioClips found for current selection.","No se han encontrado AudioClips para la selección actual"

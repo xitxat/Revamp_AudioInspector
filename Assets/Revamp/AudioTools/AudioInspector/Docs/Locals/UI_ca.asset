@@ -22,6 +22,42 @@ MonoBehaviour:
     m_Localized: Cerca actius d'AudioClip
     m_Metadata:
       m_Items: []
+  - m_Id: 313917139431424
+    m_Localized: "For\xE7at a Mono"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 315123106689024
+    m_Localized: "Ambis\xF2nic"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 314426395045888
+    m_Localized: Carregat en segon pla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304245762273280
+    m_Localized: Filtre de Cerca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 318813406343168
+    m_Localized: "Format de Compressi\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 319685578305536
+    m_Localized: "Formats d'\xC0udio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321114070167552
+    m_Localized: Taxes de Mostreig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321387534594048
+    m_Localized: Taxes Existents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321745937870848
+    m_Localized: "No s'han trobat AudioClips per a la selecci\xF3 actual."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
