@@ -57,7 +57,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 321745937870848
-    m_Localized: No AudioClips found.
+    m_Localized: No AudioClips found for current selection.
     m_Metadata:
       m_Items: []
   references:

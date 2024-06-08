@@ -7,7 +7,7 @@
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(603171696640)" />
                 </Bindings>
             </ui:Label>
-            <ui:TextField label="Text Field" placeholder-text="t:AudioClip" name="SEARCH_FILTER">
+            <ui:TextField label="Text Field" placeholder-text="t:AudioClip" name="SEARCH_FILTER" class="heading">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="label" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(304245762273280)" />
                 </Bindings>
@@ -17,7 +17,7 @@
                     <UnityEngine.Localization.LocalizedString property="label" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(313917139431424)" />
                 </Bindings>
             </ui:Toggle>
-            <ui:Toggle label="Toggle" name="LOADED_IN_BACKGROUND" style="align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start; flex-direction: row; overflow: hidden; flex-wrap: nowrap; flex-shrink: 0; flex-grow: 0;">
+            <ui:Toggle label="Toggle" name="LOADED_IN_BACKGROUND" style="align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start; flex-direction: row; overflow: hidden; flex-wrap: nowrap; flex-shrink: 0; flex-grow: 0; visibility: visible; padding-left: 0; text-overflow: clip;">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="label" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(314426395045888)" />
                 </Bindings>
@@ -29,7 +29,7 @@
             </ui:Toggle>
         </ui:VisualElement>
         <ui:VisualElement name="compression" style="flex-grow: 1;">
-            <ui:Label text="Label" name="COMPRESSION_FORMAT">
+            <ui:Label text="Label" name="COMPRESSION_FORMAT" class="heading">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(318813406343168)" />
                 </Bindings>
@@ -39,7 +39,7 @@
             <ui:Toggle label="Vorbis" name="vorbis" />
         </ui:VisualElement>
         <ui:VisualElement name="formats" style="flex-grow: 1;">
-            <ui:Label text="Label" name="AUDIO_FORMATS">
+            <ui:Label text="Label" name="AUDIO_FORMATS" class="heading">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(319685578305536)" />
                 </Bindings>
@@ -48,6 +48,9 @@
             <ui:Toggle label=".ogg" name="ogg" />
             <ui:Toggle label=".wav" name="wav" />
         </ui:VisualElement>
-        <ui:ScrollView name="results" style="min-height: 100px;" />
+        <ui:VisualElement name="no_result" style="flex-grow: 1; display: flex;">
+            <ui:Label name="NO_CLIPS" style="display: none;" />
+        </ui:VisualElement>
+        <ui:ScrollView name="results" style="min-height: 50px; flex-grow: 1;" />
     </ui:VisualElement>
 </ui:UXML>

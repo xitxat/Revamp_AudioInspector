@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using UnityEngine.Localization;
 
 
 namespace Revamp.AudioTools.AudioInspector
@@ -129,6 +130,9 @@ private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
             ScrollView scrollView = rootVisualElement.Q<ScrollView>("results");
             scrollView.Clear();
 
+            var noClipsLabel = rootVisualElement.Q<Label>("NO_CLIPS");
+            noClipsLabel.style.display = DisplayStyle.None;
+
             if (audioClips.Count > 0)
             {
                 foreach (var clip in audioClips)
@@ -142,8 +146,9 @@ private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
             }
             else
             {
-                var noResultsLabel = new Label("No AudioClips found. Try changing the search filter or compression format.");
-                scrollView.Add(noResultsLabel);
+                noClipsLabel.style.display = DisplayStyle.Flex;
+                /*  var noResultsLabel = new Label("No AudioClips HARDCODED warning");
+                scrollView.Add(noResultsLabel);  */
             }
         }
 
