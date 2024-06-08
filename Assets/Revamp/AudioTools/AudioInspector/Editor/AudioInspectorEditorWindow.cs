@@ -33,6 +33,7 @@ namespace Revamp.AudioTools.AudioInspector
         {
             AudioInspectorEditorWindow wnd = GetWindow<AudioInspectorEditorWindow>();
             wnd.titleContent = new GUIContent("Audio Inspector");
+            wnd.position= new Rect(100, 100, 300, 500);
         }
 
         public void OnEnable()
@@ -47,37 +48,37 @@ namespace Revamp.AudioTools.AudioInspector
             SetupButtonsAndEvents();
         }
 
-private void SetupButtonsAndEvents()
-        {
+        private void SetupButtonsAndEvents()
+                {
 
 
-            // Setup Toggle Event Handlers
-            SetupToggle("FORCED_TO_MONO", value => isForcedToMono = value);
-            SetupToggle("LOADED_IN_BACKGROUND", value => isLoadInBkgrnd = value);
-            SetupToggle("AMBISONIC", value => isAmbisonic = value);
-            SetupToggle("adpcm", value => isADPCM = value);
-            SetupToggle("pcm", value => isPCM = value);
-            SetupToggle("vorbis", value => isVorbis = value);
-            SetupToggle("mp3", value => isMP3 = value);
-            SetupToggle("ogg", value => isOGG = value);
-            SetupToggle("wav", value => isWAV = value);
+                    // Setup Toggle Event Handlers
+                    SetupToggle("FORCED_TO_MONO", value => isForcedToMono = value);
+                    SetupToggle("LOADED_IN_BACKGROUND", value => isLoadInBkgrnd = value);
+                    SetupToggle("AMBISONIC", value => isAmbisonic = value);
+                    SetupToggle("adpcm", value => isADPCM = value);
+                    SetupToggle("pcm", value => isPCM = value);
+                    SetupToggle("vorbis", value => isVorbis = value);
+                    SetupToggle("mp3", value => isMP3 = value);
+                    SetupToggle("ogg", value => isOGG = value);
+                    SetupToggle("wav", value => isWAV = value);
 
-            // Initial fetch and display of audio clips
-            SearchAudioClips(searchFilter, applyFilters: false);
-        }
+                    // Initial fetch and display of audio clips
+                    SearchAudioClips(searchFilter, applyFilters: false);
+                }
 
-private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
-        {
-            var toggle = rootVisualElement.Q<Toggle>(toggleName);
-            toggle.RegisterValueChangedCallback(evt =>
-            {
-                toggleAction(evt.newValue);
-                SearchAudioClips(searchFilter);
-            });
-        }
+        private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
+                {
+                    var toggle = rootVisualElement.Q<Toggle>(toggleName);
+                    toggle.RegisterValueChangedCallback(evt =>
+                    {
+                        toggleAction(evt.newValue);
+                        SearchAudioClips(searchFilter);
+                    });
+                }
 
-// FILTER
-    private void SearchAudioClips(string filter, bool applyFilters = true)
+        // FILTER
+        private void SearchAudioClips(string filter, bool applyFilters = true)
     {
         var allAudioClips = AssetDatabase.FindAssets(filter)
                                         .Select(guid => AssetDatabase.GUIDToAssetPath(guid))
@@ -103,7 +104,7 @@ private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
                     return false;
                 }
 
-                Debug.Log($"Clip: {clip.name}, ForceToMono in Importer: {audioImporter.forceToMono}, ForcedToMono Toggle: {isForcedToMono}");
+//                Debug.Log($"Clip: {clip.name}, ForceToMono in Importer: {audioImporter.forceToMono}, ForcedToMono Toggle: {isForcedToMono}");
 
                 // TOGGLES
                 if (isForcedToMono != audioImporter.forceToMono) return false;
@@ -117,7 +118,7 @@ private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
             }).ToList();
         }
 
-        Debug.Log($"Filtered AudioClip assets count: {filteredAudioClips.Count}");
+//        Debug.Log($"Filtered AudioClip assets count: {filteredAudioClips.Count}");
 
         audioClips = filteredAudioClips; 
 
@@ -150,6 +151,8 @@ private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
                 /*  var noResultsLabel = new Label("No AudioClips HARDCODED warning");
                 scrollView.Add(noResultsLabel);  */
             }
+            // Force UI update
+            scrollView.MarkDirtyRepaint();
         }
 
         private bool IsMatchingCompressionFormat(AudioCompressionFormat format)

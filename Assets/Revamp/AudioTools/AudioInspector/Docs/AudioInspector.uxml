@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
     <Style src="project://database/Assets/Revamp/AudioTools/AudioInspector/Docs/AudioInspector.uss?fileID=7433441132597879392&amp;guid=0b4518159abaacf49883d325e4242602&amp;type=3#AudioInspector" />
-    <ui:VisualElement name="base" class="border-root" style="flex-grow: 1; min-height: 400px;">
-        <ui:VisualElement name="search" style="flex-grow: 1; flex-direction: column; align-items: stretch;">
+    <ui:VisualElement name="base" class="border-root" style="flex-grow: 1; min-height: 500px; flex-basis: auto; max-height: 500px; height: 500px;">
+        <ui:VisualElement name="search" style="flex-grow: 1; flex-direction: column; align-items: stretch; flex-shrink: 0;">
             <ui:Label text="Label" name="TITLE" class="font-title">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(603171696640)" />
@@ -38,7 +38,7 @@
             <ui:Toggle label="PCM" name="pcm" />
             <ui:Toggle label="Vorbis" name="vorbis" />
         </ui:VisualElement>
-        <ui:VisualElement name="formats" style="flex-grow: 1;">
+        <ui:VisualElement name="formats" style="flex-grow: 1; flex-shrink: 0;">
             <ui:Label text="Label" name="AUDIO_FORMATS" class="heading">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(319685578305536)" />
@@ -48,13 +48,13 @@
             <ui:Toggle label=".ogg" name="ogg" />
             <ui:Toggle label=".wav" name="wav" />
         </ui:VisualElement>
-        <ui:VisualElement name="no_result" style="flex-grow: 1; display: flex;">
+        <ui:VisualElement name="no_result" style="flex-grow: 1; display: flex; min-height: 20px; max-height: 20px;">
             <ui:Label name="NO_CLIPS" style="display: none; flex-wrap: nowrap; flex-grow: 0; white-space: normal; -unity-font-style: italic;">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:6e58091cb514fbd48a5f4ba834b144ec" entry="Id(321745937870848)" />
                 </Bindings>
             </ui:Label>
         </ui:VisualElement>
-        <ui:ScrollView name="results" style="min-height: 50px; flex-grow: 1;" />
+        <ui:ScrollView name="results" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden" mode="Vertical" vertical-page-size="-1" style="min-height: 100px; flex-grow: 0; flex-shrink: 0; align-items: flex-start; flex-basis: auto; max-height: 175px;" />
     </ui:VisualElement>
 </ui:UXML>
