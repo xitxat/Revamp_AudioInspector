@@ -133,8 +133,11 @@ private void SetupToggle(string toggleName, System.Action<bool> toggleAction)
             {
                 foreach (var clip in audioClips)
                 {
-                    var label = new Label(clip.name);
-                    scrollView.Add(label);
+                    var button = new Button(() => Selection.activeObject = clip)
+                    {
+                        text = clip.name
+                    };
+                    scrollView.Add(button);                
                 }
             }
             else
